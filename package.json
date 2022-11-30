@@ -1,0 +1,16 @@
+{
+  "name": "filemanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "install-fe": "npm install --prefix ./fe",
+    "install-be": "npm install --prefix ./be",
+    "start": "concurrently \"npm --prefix ./fe run-script start\" \"npm --prefix ./be run-script start\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
